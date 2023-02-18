@@ -1,0 +1,30 @@
+.social {
+  @extend .flex-container;
+  gap: 10px;
+  margin-bottom: 30px;
+  &__link {
+    @extend .flex-container;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    color: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $brand-color;
+      color: $white-color;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+.social--footer {
+  .social__link {
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
+}

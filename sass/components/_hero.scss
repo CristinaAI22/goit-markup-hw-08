@@ -1,0 +1,56 @@
+.hero {
+  margin: 0 auto;
+  text-align: center;
+  background-color: bisque;
+  background-image: url(../../images/header768.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  &__title {
+    margin: 0 auto;
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+  &__button {
+    color: $white-color;
+    background-color: $brand-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 0px solid $brand-color;
+    border-radius: 4px;
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:hover {
+    background-color: #1775c1;
+  }
+}
+
+@media screen and (min-width: 7680px) {
+  .hero {
+    background-image: url(../../images/header1200.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    background-image: url(../../images/header1600.jpg);
+    margin-bottom: 94px;
+  }
+}

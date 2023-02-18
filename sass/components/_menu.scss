@@ -1,0 +1,41 @@
+.menu {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  &__link {
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 32px;
+  }
+  &__link:hover {
+    color: $brand-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .menu--contact {
+    flex-direction: column;
+    margin-left: auto;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu--contact {
+    flex-direction: row;
+    align-items: center;
+  }
+  /*.page-header {
+    &__inner {
+      padding: 0 215px;
+    }
+  }*/
+}

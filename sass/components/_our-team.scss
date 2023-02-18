@@ -1,0 +1,27 @@
+.our-team {
+  @extend .flex-container;
+  background-color: #f5f4fa;
+  padding: 60px 0;
+  margin-bottom: 60px;
+  &__inner {
+    flex: 480px;
+  }
+  &__title {
+    @extend .title;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team {
+    &__inner {
+      flex-basis: 768px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    margin-bottom: 94px;
+    &__inner {
+      flex-basis: 1200px;
+    }
+  }
+}

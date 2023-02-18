@@ -1,0 +1,56 @@
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  border: 2px solid blue;
+  margin-bottom: 60px;
+
+  &__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 100px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border: 2px solid $brand-color;
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: $light-text;
+  }
+}
+@media screen and (min-width: 768px) {
+  .values {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: calc((100% - $gap) / 2);
+    }
+    &__subtitle {
+      text-align: left;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values {
+    flex-wrap: nowrap;
+    margin-bottom: 94px;
+    &__item {
+      flex-basis: calc((100% - (3 * $gap)) / 4);
+    }
+  }
+}

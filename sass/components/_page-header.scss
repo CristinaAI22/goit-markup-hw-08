@@ -1,0 +1,13 @@
+.page-header {
+  display: flex;
+  justify-content: center;
+  &__inner {
+    background-color: $white-color;
+    flex: 0 0 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 1170px;
+    gap: 20px;
+  }
+}
