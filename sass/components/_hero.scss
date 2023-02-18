@@ -2,7 +2,7 @@
   margin: 0 auto;
   text-align: center;
   background-color: bisque;
-  background-image: url(../images/header768.jpg);
+  background-image: url("../../images/header768.jpg");
   background-size: cover;
   background-position: center center;
   height: 400px;
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 7680px) {
   .hero {
-    background-image: url(../images/header1200.jpg);
+    background-image: url("../../images/header1200.jpg");
   }
 }
 
@@ -50,7 +50,7 @@
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../images/header1600.jpg);
+    background-image: url("../../images/header1600.jpg");
     margin-bottom: 94px;
   }
 }
