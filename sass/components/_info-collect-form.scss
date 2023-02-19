@@ -2,6 +2,7 @@
   padding: 2px 40px 40px 40px;
   display: flex;
   flex-direction: column;
+
   &__title {
     font-weight: 700;
     font-size: 20px;
@@ -54,6 +55,7 @@
     height: 120px;
     resize: none;
     margin-bottom: 20px;
+    display: block;
     &:focus {
       outline: 1px solid $brand-color;
     }

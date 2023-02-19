@@ -30,9 +30,9 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 798px;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: $white-color;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -49,33 +49,54 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: inherit;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
-
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
   &__link {
     display: block;
-    padding: 10px;
-    color: #fff;
+    color: inherit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    &:hover {
+      color: $brand-color;
+    }
   }
   &--contact {
     margin-top: auto;
+
+    &__link {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: $light-text;
+    }
   }
   &--contact &__item:first-child a {
-    color: red;
+    color: $brand-color;
   }
 }
 
 .mobile-menu--social {
   display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+  margin-bottom: 48px;
   gap: 20px;
 
   &__link {
-    color: $white-color;
+    color: $brand-color;
     font-size: 18px;
+    line-height: 1.22;
+    font-weight: 500;
   }
 }

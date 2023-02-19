@@ -1,9 +1,7 @@
 .about {
   @extend .flex-container;
-  border: 2px solid red;
   padding: 0 15px;
   &__inner {
-    border: 2px solid green;
     flex-basis: 480px;
   }
 }

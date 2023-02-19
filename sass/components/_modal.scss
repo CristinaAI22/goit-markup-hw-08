@@ -9,8 +9,8 @@
   transition: opacity 3s linear;
   z-index: 99;
   &__inner {
-    width: 528px;
-    height: 581px;
+    flex-basis: 450px;
+    height: 649px;
     background-color: #ffffff;
     position: relative;
     display: flex;
@@ -48,4 +48,12 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    &__inner {
+      flex-basis: 528px;
+      height: 581px;
+    }
+  }
 }

@@ -5,7 +5,7 @@
   margin-bottom: 60px;
   &__inner {
     flex: 480px;
-    border: 2px solid green;
+    padding: 0 15px;
   }
   &__title {
     @extend .title;
@@ -23,6 +23,7 @@
     margin-bottom: 94px;
     &__inner {
       flex-basis: 1200px;
+      flex-grow: 0;
     }
   }
 }
